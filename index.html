@@ -1,0 +1,360 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Loganaath S | Aspiring Cybersecurity Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>:root{color-scheme:dark;
+  --bg:#050b14; --bg2:#0a1424; --card:rgba(12,24,44,.72); --line:rgba(80,140,255,.18);
+  --text:#e6efff; --muted:#8fa3c4; --accent:#00e5a8; --accent2:#3b82f6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+.mono{font-family:'JetBrains Mono',monospace}
+#matrix{position:fixed;inset:0;z-index:-1;opacity:.18}
+a{color:inherit;text-decoration:none}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;
+  padding:14px 6vw;background:rgba(5,11,20,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.logo{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--accent)}
+.logo span{color:var(--accent2)}
+.nav nav{display:flex;gap:26px;align-items:center}
+.nav nav a{color:var(--muted);font-size:.92rem;transition:.2s}
+.nav nav a:hover{color:var(--accent)}
+.btn-sm{border:1px solid var(--accent);color:var(--accent)!important;padding:6px 16px;border-radius:6px}
+.btn-sm:hover{background:var(--accent);color:#04120d!important}
+.menu-btn{display:none;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center;padding:120px 6vw 60px}
+.tag{color:var(--accent);margin-bottom:8px}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.1}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.typing{font-size:1.15rem;color:var(--accent);margin:12px 0 18px;min-height:1.8em}
+.cursor{animation:blink 1s infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{color:var(--muted);max-width:560px}
+.lead strong{color:var(--text)}
+.cta{display:flex;gap:14px;margin:28px 0;flex-wrap:wrap}
+.btn{padding:12px 26px;border-radius:8px;font-weight:600;transition:.25s;display:inline-block}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#031018}
+.btn.primary:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,229,168,.3)}
+.btn.ghost{border:1px solid var(--line);color:var(--text)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+.stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:10px}
+.stats b{display:block;font-size:1.7rem;color:var(--accent)}
+.stats span{font-size:.8rem;color:var(--muted)}
+
+.hero-photo{position:relative;width:min(380px,80vw);aspect-ratio:4/5;justify-self:center}
+.hero-photo img,.photo-fallback{position:relative;z-index:2;width:100%;height:100%;object-fit:cover;object-position:top;border-radius:24px;border:2px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.photo-fallback{display:none;place-items:center;font-size:5rem;font-weight:700;background:var(--bg2);color:var(--accent)}
+.ring{position:absolute;inset:-14px;border-radius:30px;border:2px dashed var(--accent2);opacity:.5;animation:spin 30s linear infinite;z-index:1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.badge{position:absolute;z-index:3;padding:7px 14px;font-size:.78rem;background:var(--card);border:1px solid var(--accent);border-radius:30px;backdrop-filter:blur(8px);animation:float 4s ease-in-out infinite}
+.b1{top:8%;left:-14%}.b2{bottom:22%;right:-12%;animation-delay:1s}.b3{bottom:4%;left:-6%;animation-delay:2s}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* SECTIONS */
+.section{padding:90px 6vw;max-width:1200px;margin:auto}
+.section h2{font-size:2rem;margin-bottom:34px}
+.section h2 .mono{color:var(--accent);font-size:1.1rem;margin-right:8px}
+.muted{color:var(--muted);margin:-18px 0 26px}
+.grid{display:grid;gap:22px}
+.two{grid-template-columns:repeat(2,1fr)}
+.three{grid-template-columns:repeat(3,1fr)}
+.four{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;backdrop-filter:blur(8px);transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 12px 40px rgba(0,229,168,.08)}
+.card p+p{margin-top:14px}
+.card h3{margin-bottom:12px;font-size:1.1rem}
+.card p{color:var(--muted)}
+.card em{color:var(--accent);font-style:normal}
+
+.terminal{background:#02070d;padding:0}
+.terminal .dots{padding:12px 16px;background:#0b1626;display:flex;gap:7px}
+.dots i{width:11px;height:11px;border-radius:50%;background:#ff5f57}
+.dots i:nth-child(2){background:#febc2e}.dots i:nth-child(3){background:#28c840}
+.terminal pre{padding:20px;font-size:.82rem;color:#b8c9e6;overflow-x:auto}
+.g{color:var(--accent)}.b{color:var(--accent2)}
+
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chips li{font-size:.78rem;padding:5px 12px;border-radius:20px;background:rgba(59,130,246,.12);border:1px solid var(--line);color:#bcd2ff}
+.pill{display:inline-block;font-size:.75rem;padding:4px 12px;border-radius:20px;background:rgba(0,229,168,.12);color:var(--accent);margin-bottom:12px}
+
+.bars{margin-top:34px;display:grid;gap:18px;max-width:640px}
+.bar label{display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:6px}
+.bar label b{color:var(--accent)}
+.bar>div{height:8px;border-radius:8px;background:rgba(255,255,255,.08);overflow:hidden}
+.bar span{display:block;height:100%;width:0;border-radius:8px;background:linear-gradient(90deg,var(--accent2),var(--accent));transition:width 1.4s ease}
+
+.timeline{border-left:2px solid var(--line);margin-left:8px;padding-left:30px}
+.t-item{position:relative;margin-bottom:34px}
+.t-item::before{content:"";position:absolute;left:-39px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent)}
+.t-date{color:var(--accent);font-size:.82rem}
+.t-item h3{margin:4px 0}.t-item p{color:var(--muted)}
+
+.road .st{font-size:.72rem;padding:3px 10px;border-radius:20px;border:1px solid var(--line);color:var(--muted)}
+.road .st.done{color:var(--accent);border-color:var(--accent)}
+.road h3{margin-top:14px}
+
+.contact{text-align:center}
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:22px}
+.links a{padding:10px 20px;border:1px solid var(--line);border-radius:10px;transition:.25s}
+.links a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-3px)}
+
+footer{text-align:center;padding:30px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}
+
+.reveal{transform:translateY(20px);transition:.8s}
+.reveal.show{transform:none}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;text-align:center;padding-top:110px}
+  .lead{margin:auto}.cta,.stats{justify-content:center}
+  .two,.three,.four{grid-template-columns:1fr}
+  .b1{left:0}.b2{right:0}.b3{left:4%}
+  .menu-btn{display:block}
+  .nav nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg2);padding:20px;display:none}
+  .nav nav.open{display:flex}
+}
+</style>
+
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a href="#home" class="logo">&lt;loganaath<span>/&gt;</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#roadmap">Security Roadmap</a>
+      <a href="#contact" class="btn-sm">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="mono tag">$ whoami</p>
+        <h1>Loganaath <span class="grad">S</span></h1>
+        <p class="typing mono"><span id="typed"></span><span class="cursor">|</span></p>
+        <p class="lead">Electronics &amp; Communication Engineering undergraduate who loves to analyze problems, think logically and solve real-world challenges through innovation and technology. Beginner cybersecurity engineer building skills in <strong>network security, ethical hacking and secure IoT</strong>.</p>
+        <div class="cta">
+          <a href="#contact" class="btn primary">Get in touch</a>
+          <a href="assets/Loganaath_S_Resume.pdf" class="btn ghost" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+        <div class="stats">
+          <div><b>2027</b><span>Expected graduation</span></div>
+          <div><b>4</b><span>Languages spoken</span></div>
+          <div><b>1</b><span>Embedded internship</span></div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="ring"></div>
+        <img src="assets/profile.jpg" alt="Portrait of Loganaath S" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />
+        <div class="photo-fallback">LS</div>
+        <div class="badge b1 mono">🔐 Cyber Security</div>
+        <div class="badge b2 mono">⚙️ Embedded</div>
+        <div class="badge b3 mono">🌐 IoT</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2><span class="mono">01.</span> About Me</h2>
+      <div class="grid two">
+        <div class="card">
+          <p>I'm someone who likes to analyze issues, think logically, and approach problems with creativity and persistence. I'm motivated by problem-solving and enjoy learning new skills whenever I face a challenge.</p>
+          <p>My hands-on exposure to embedded software design and testing, plus a runner-up Theft Detection Home Automation project, sparked my interest in how connected devices can be <em>attacked and defended</em>. I'm now steering my learning toward cybersecurity: network security, ethical hacking, and secure IoT/embedded systems.</p>
+        </div>
+        <div class="card terminal">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <pre class="mono">
+<span class="g">loganaath@secure</span>:<span class="b">~</span>$ cat profile.json
+{
+  "role": "ECE Undergraduate",
+  "college": "Velammal College of Engg &amp; Tech",
+  "focus": ["Cybersecurity",
+            "Embedded Security",
+            "IoT Security"],
+  "languages": ["Telugu","English",
+                "Tamil","Hindi (Basic)"],
+  "level": "Beginner",
+  "status": "Open to internships"
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2><span class="mono">02.</span> Skills &amp; Focus Areas</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>🛡️ Cybersecurity (Learning)</h3>
+          <ul class="chips">
+            <li>Network Security</li><li>Ethical Hacking</li><li>Linux</li><li>Kali Linux</li><li>Wireshark</li><li>Nmap</li>
+            <li>Burp Suite</li><li>OWASP Top 10</li><li>Cryptography Basics</li><li>Secure IoT</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>💻 Technical</h3>
+          <ul class="chips">
+            <li>C</li><li>C++</li><li>Java</li><li>HTML</li><li>SQL</li>
+            <li>Embedded Software</li><li>Home Automation</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🤝 Professional</h3>
+          <ul class="chips">
+            <li>Critical Thinking</li><li>Decision Making</li><li>Leadership</li>
+            <li>Negotiation</li><li>Creativity</li><li>Management</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bars">
+        <div class="bar"><label>Decision Making <b>94%</b></label><div><span data-w="94"></span></div></div>
+        <div class="bar"><label>Team Management <b>81%</b></label><div><span data-w="81"></span></div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2><span class="mono">03.</span> Projects &amp; Experience</h2>
+      <div class="grid two">
+        <article class="card project">
+          <span class="pill">🏆 Runner-up</span>
+          <h3>Theft Detection Home Automation</h3>
+          <p>Mini project that detects unauthorized access and automates home responses. Combines sensing, embedded logic and alerting, the same building blocks used in modern IoT security.</p>
+          <ul class="chips"><li>IoT</li><li>Embedded</li><li>Sensors</li><li>Alerts</li></ul>
+        </article>
+        <article class="card project">
+          <span class="pill">💼 Internship</span>
+          <h3>Embedded Software Design &amp; Testing</h3>
+          <p>Internship at <strong>Embien Groups India Pvt. Ltd.</strong> Gained exposure to embedded development workflows, testing practices and the quality mindset that secure firmware depends on.</p>
+          <ul class="chips"><li>Embedded C</li><li>Testing</li><li>Firmware</li></ul>
+        </article>
+        <article class="card project">
+          <span class="pill">📜 Certification</span>
+          <h3>Industry 5.0 (2023)</h3>
+          <p>Studied human-centric, connected industrial systems, a field where securing operational technology is increasingly critical.</p>
+        </article>
+        <article class="card project">
+          <span class="pill">📜 Certification</span>
+          <h3>SQL (2023)</h3>
+          <p>Database fundamentals and querying, the foundation for understanding data protection and SQL injection defenses.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="section">
+      <h2><span class="mono">04.</span> Education Journey</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <span class="t-date mono">2023 – Present</span>
+          <h3>B.E. Electronics &amp; Communication Engineering</h3>
+          <p>Velammal College of Engineering and Technology, Madurai · Expected graduation 2027</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date mono">2017 – 2023</span>
+          <h3>Secondary &amp; Higher Secondary (Grade 7–12)</h3>
+          <p>Sri Aurobindo Mira Matriculation Higher Secondary School, Madurai</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date mono">Now · Self-learning</span>
+          <h3>Beginner Cybersecurity Path</h3>
+          <p>Studying networking basics, Linux command line, the CIA triad, common attacks and defenses, and the OWASP Top 10. Practicing on beginner labs such as TryHackMe.</p>
+          <ul class="chips"><li>Networking</li><li>Linux</li><li>Wireshark</li><li>Nmap</li><li>OWASP Top 10</li><li>Cryptography Basics</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap" class="section">
+      <h2><span class="mono">05.</span> Cybersecurity Roadmap</h2>
+      <p class="muted">Where I'm heading. Update the status as you progress!</p>
+      <div class="grid four">
+        <div class="card road"><span class="st done">In progress</span><h3>Networking</h3><p>TCP/IP, DNS, HTTP, firewalls</p></div>
+        <div class="card road"><span class="st">Planned</span><h3>Linux &amp; Scripting</h3><p>Bash, Python, command line</p></div>
+        <div class="card road"><span class="st">Planned</span><h3>Ethical Hacking</h3><p>TryHackMe, Hack The Box, CTFs</p></div>
+        <div class="card road"><span class="st">Planned</span><h3>Certifications</h3><p>CompTIA Security+, CEH, eJPT</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2><span class="mono">06.</span> Contact</h2>
+      <div class="card contact">
+        <p>I'm open to cybersecurity internships, learning opportunities and collaborations.</p>
+        <div class="links">
+          <a href="mailto:loganaath.sankarganesh@gmail.com">📧 loganaath.sankarganesh@gmail.com</a>
+          <a href="tel:+919087823999">📞 +91 90878 23999</a>
+          <a href="#">📍 Madurai, Tamil Nadu, India</a>
+          <a href="https://github.com/Loganaath07" target="_blank" rel="noopener">🐙 GitHub</a>
+          <a href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener">💼 LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="mono">© <span id="year"></span> Loganaath S · Built with HTML, CSS &amp; JS</p>
+  </footer>
+
+  
+
+<script>// Typing effect
+const roles = ["Beginner Cybersecurity Engineer", "Ethical Hacking Enthusiast", "Embedded & IoT Security Learner", "Problem Solver"];
+let r = 0, c = 0, del = false;
+const typed = document.getElementById("typed");
+(function type() {
+  const word = roles[r];
+  typed.textContent = word.slice(0, c);
+  if (!del && c++ === word.length) { del = true; return setTimeout(type, 1400); }
+  if (del && c-- === 0) { del = false; r = (r + 1) % roles.length; }
+  setTimeout(type, del ? 35 : 75);
+})();
+
+// Matrix rain background
+const cv = document.getElementById("matrix"), ctx = cv.getContext("2d");
+function size() { cv.width = innerWidth; cv.height = innerHeight; }
+size(); addEventListener("resize", size);
+const chars = "01<>/{}[]#$%&*ABCDEF";
+let drops = [];
+function rain() {
+  const cols = Math.floor(cv.width / 16);
+  while (drops.length < cols) drops.push(Math.random() * -50);
+  ctx.fillStyle = "rgba(5,11,20,.12)"; ctx.fillRect(0, 0, cv.width, cv.height);
+  ctx.fillStyle = "#00e5a8"; ctx.font = "14px JetBrains Mono, monospace";
+  drops.forEach((y, i) => {
+    ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * 16, y * 16);
+    drops[i] = y * 16 > cv.height && Math.random() > .975 ? 0 : y + 1;
+  });
+}
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(rain, 70);
+
+// Mobile menu
+const nav = document.getElementById("navLinks");
+document.getElementById("menuBtn").onclick = () => nav.classList.toggle("open");
+nav.querySelectorAll("a").forEach(a => a.onclick = () => nav.classList.remove("open"));
+
+// Reveal on scroll + skill bars
+document.querySelectorAll(".card,.t-item,.section h2").forEach(el => el.classList.add("reveal"));
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) {
+    e.target.classList.add("show");
+    e.target.querySelectorAll?.("[data-w]").forEach(b => b.style.width = b.dataset.w + "%");
+    io.unobserve(e.target);
+  }
+}), { threshold: .15 });
+document.querySelectorAll(".reveal,.bars").forEach(el => io.observe(el));
+document.querySelectorAll(".bars").forEach(el => new IntersectionObserver((es, o) => es.forEach(e => {
+  if (e.isIntersecting) { el.querySelectorAll("[data-w]").forEach(b => b.style.width = b.dataset.w + "%"); o.disconnect(); }
+}), { threshold: .3 }).observe(el));
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body></html>
